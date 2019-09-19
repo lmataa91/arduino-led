@@ -1,18 +1,18 @@
-const int ledPIN= 3;
-const int ledPIN1=5;
+const int ledPIN= 3;// declaracion del puerto de salida en el arduino 
+const int ledPIN1=5;// declaracion del puerto de salida 
 void setup() {
   Serial.begin(9600);  
-  pinMode(ledPIN,OUTPUT);
+  pinMode(ledPIN,OUTPUT); //Configura el pin especificado para que se comporte como entrada o salida
   pinMode(ledPIN,OUTPUT);
   }
 
 void loop() {
-  digitalWrite (ledPIN,HIGH);
-  delay(8000);
-  digitalWrite (ledPIN,LOW);
-  delay (700);
-digitalWrite (ledPIN1,HIGH);
-  delay(8000);
-  digitalWrite (ledPIN1,LOW);
-  delay (700);
+  digitalWrite (ledPIN,HIGH);// encendiendo la led1
+  delay(8000);// tiempo de encendido 
+  digitalWrite (ledPIN,LOW);// apagando led
+  delay (700);// tiempo de apagado 
+digitalWrite (ledPIN1,HIGH);// encendiendo led
+  delay(8000);// tiempo de encendido 
+  digitalWrite (ledPIN1,LOW);//apagando led 
+  delay (700);// tiempo de apagado 
 }
